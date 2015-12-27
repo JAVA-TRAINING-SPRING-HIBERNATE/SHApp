@@ -8,10 +8,10 @@ import org.springframework.transaction.annotation.Transactional;
 import pl.cholewinski.dao.PersonDAO;
 import pl.cholewinski.model.Person;
 
+@Transactional
 public class PersonDAOImpl extends HibernateDaoSupport implements PersonDAO {
 
 	@Override
-	@Transactional
 	public void save(Person p) {
 		getHibernateTemplate().save(p);
 	}
