@@ -18,7 +18,7 @@
 			<bean
 				class="org.springframework.beans.factory.config.PropertiesFactoryBean">
 				<property name="location">
-					<value>properties/hibernate.properties</value>
+					<value>classpath:properties/hibernate.properties</value>
 				</property>
 			</bean>
 		</property>
